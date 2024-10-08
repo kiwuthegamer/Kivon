@@ -1,0 +1,50 @@
+<!-- Stylesheets/Scripts -->
+
+<head>
+  <link rel="shortcut icon" href="image.png" type="image/x-icon">
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <title>Kivon Code Alpha 0.8</title>
+</head>
+
+<!-- Body -->
+
+<body>
+
+<!-- Buttons -->
+
+<input id="run" class="run" type="button" onclick="run()" value="Run >">
+<input id="reset" class="reset" type="button" onclick="reset()" value="Reset <">
+<input id="guide" class="guide" type="button" onclick="guide()" value="Guide ?">
+<input id="vh" class="vh" type="button" value="Version History ..." onclick="window.location.href='https://kivon.kevingeorge.repl.co/VersionHistory'">
+<div class="dropdwn">
+  <button id="examples" class="examples">Examples &</button>
+  <div class="dropdwn-content">
+    <a onclick="document.getElementById('input').value='print Hello World!'">Hello World</a>
+    <a onclick="chsh()">Character Sheet</a>
+    <a onclick="qq()">Quick Quiz</a>
+  </div>
+</div>
+<input id="credit" class="credit" type="button" onclick="swal('','Made by Kevin George (kiwuthegamer)', 'info')" value="Made By @">
+<br><br>
+
+<!-- Input + Output -->
+
+<div class="txtarea">
+  <div class="in">
+    <textarea rows=22 placeholder="Code Goes Here" class="text" id="input" spellcheck="false"></textarea>
+  </div>
+  <div>
+    <textarea rows=22 readonly id="output" class="out"></textarea>
+  </div>
+</div>
+
+<input id="swtch-mode" class="swtch-mode" value="Switch Mode" type="button" onclick="swtch()">
+<input id="import" class="import" type="file" accept=".kivon" onclick="impor()" value="Import">
+<input id="export" class="export" type="button" onclick="expor()" value="Export File">
+<br>
+<input id="load" class="load" type="button" onclick="impor()" value="Load File">
+<script src="compiler.js"></script>
+</body>

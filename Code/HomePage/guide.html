@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kivon</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="guide">Guide</h1>
+<blockquote>
+<p>This guide is for the latest version of Kivon. Info in it may or may not function on versions before the latest.</p>
+</blockquote>
+<h2 id="buttons">Buttons</h2>
+<h3 id="run">Run</h3>
+<p>The run button will run the commands in the input box and give an output in the output box. If the output says "Error on line...", there is a mistake in your code.</p>
+<h3 id="reset">Reset</h3>
+<p>The reset button will clear the output and input box.</p>
+<blockquote>
+<p>Note: The reset button will also clear the input box! Make sure that you save your code before clicking it.</p>
+</blockquote>
+<h3 id="guide-1">Home</h3>
+<p>The home button will bring you to this page.</p>
+<h3 id="version-history">Version History</h3>
+<p>The version history will take you to the <a onclick="window.location.href='https://kivon.kevingeorge.repl.co/Code/VersionHistory/'">Version History</a> page.</p>
+<h3 id="guide-1">Report</h3>
+<p>The report menu will allow you to report a bug or suggest a feature.</p>
+<h3 id="guide-1">Tutorial</h3>
+<p>The tutorial button will open a small menu at the bottom of the screen which can be used as a step-by-step guide.</p>
+<h3 id="examples">Examples</h3>
+<p>The examples button has 3 examples of Kivon code.</p>
+<h3 id="made-by">Made By</h3>
+<p>The made by button gives credit to the creator of Kivon, Kevin George(aka kiwuthegamer).</p>
+<h3 id="made-by">Share</h3>
+<p>The share menu allows you share your code.</p>
+<h3 id="choose-file">Choose File</h3>
+<p>The choose file button will allow you to import a .kivon file from your computer.</p>
+<h3 id="export-file">Export File</h3>
+<p>The export file button will export your current Kivon code as a .kivon file.</p>
+<h3 id="load-file">Load File</h3>
+<p>After choosing your file, click this button to load it.</p>
+<h3 id="load-file">Switch Modes</h3>
+<p>Click this button to open a small menu allowing you to switch the theme of Kivon to multiple themes.</p>
+<h2 id="functions">Functions</h2>
+<h3 id="print">Print</h3>
+<p>The print command will instantly type text into the output box.</p>
+<p><strong>Syntax</strong> - print <em>text</em></p>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>text</em></td>
+<td>Text to print (Including variables and new lines)</td>
+</tr>
+</tbody>
+</table><h3 id="alert">Alert</h3>
+<p>The alert function will alert some text.</p>
+<p><strong>Syntax</strong> - alert <em>text</em></p>
+
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>text</em></td>
+<td>Text to alert (Including variables and new lines)</td>
+</tr>
+</tbody>
+</table><h3 id="prompt">Prompt</h3>
+<p>This prompt command will display a prompt box but won’t store the input.</p>
+<p><strong>Syntax</strong> - prompt <em>text</em></p>
+
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>text</em></td>
+<td>Text to prompt (Including variables and new lines)</td>
+</tr>
+</tbody>
+</table><h3 id="variable">Variable</h3>
+<h4 id="normal-variable">Normal Variable</h4>
+<p>The variable command will make a new variable if the variable with the specified name doesnt exist. It will update the current variable if the variable with the specified name does exist.</p>
+<p><strong>Syntax</strong> - var <em>varname text</em></p>
+
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>varname</em></td>
+<td>The name of the variable to be set/created</td>
+</tr>
+<tr>
+<td><em>text</em></td>
+<td>The text that the variable’s value will be(Including variables and new lines)</td>
+</tr>
+</tbody>
+</table><h4 id="prompt-saved-in-variable">Prompt Saved in Variable</h4>
+<p>This command will save the input of a prompt in a variable.</p>
+<blockquote>
+<p>Note: Other rules of normal variables apply here too.</p>
+</blockquote>
+<p><strong>Syntax</strong> - var <em>varname</em> $prompt <em>text</em></p>
+
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>varname</em></td>
+<td>The name of the variable to be set/created</td>
+</tr>
+<tr>
+<td><em>text</em></td>
+<td>The text of the prompt (Including variables and new lines)</td>
+</tr>
+</tbody>
+</table><h4 id="prompt-saved-in-variable">Random Number Saved in Variable</h4>
+<p>This command will save a random number in a variable.</p>
+<blockquote>
+<p>Note: Other rules of normal variables apply here too.</p>
+</blockquote>
+<p><strong>Syntax</strong> - var <em>varname</em> $rand <em>num1 num2</em></p>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>varname</em></td>
+<td>The name of the variable to be set/created</td>
+</tr>
+<tr>
+<td><em>num1</em></td>
+<td>The smallest number that can be generated</td>
+</tr>
+<tr>
+<td><em>num2</em></td>
+<td>The biggest number that can be generated</td>
+</tr>
+</tbody>
+</table><h4 id="calculation-in-variable">Calculation In Variable</h4>
+<p>The calculation in variable will add, subtract, multiply, or divide 2 numbers or variables and set a variable to the result.</p>
+<p><strong>Syntax</strong> - var <em>varname</em> $calc <em>operator num1 num2</em></p>
+
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>varname</em></td>
+<td>The name of the variable to be set</td>
+</tr>
+<tr>
+<td><em>operator</em></td>
+<td>The operation to be performed on the two numbers</td>
+</tr>
+<tr>
+<td><em>num1 / num2</em></td>
+<td>The numbers or variables to calculate</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="if">If</h3>
+<p>The if statement will compare 2 variables or values with a specified operator. An 'else' can also be added</p>
+<p><strong>Syntax</strong> - if <em>varname1 operator varname2</em> then <br><em>command</em><br>end</p>
+<p><strong>Syntax(Else)</strong> - if <em>varname1 operator varname2</em> then <br><em>command</em><br>else<br><em>command</em><br>end</p>
+
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>varname1</em>/<em>varname2</em></td>
+<td>The names of the variables/values to compare</td>
+</tr>
+<tr>
+<td><em>command</em></td>
+<td>The command that might run</td>
+</tr>
+<tr>
+<td><em>operator</em></td>
+<td>The operator that compares the variables</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>=</td>
+<td>Is equal to</td>
+</tr>
+<tr>
+<td>!</td>
+<td>Is not equal to</td>
+</tr>
+</tbody>
+</table><h3 id="comment">Comment</h3>
+<p>The comment function allows you to add a comment to your code to help others or to organize it.<br>
+<strong>Syntax</strong> - \\ <em>text</em></p>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>text</em></td>
+<td>The comment text</td>
+</tr>
+</tbody>
+</table><blockquote>
+<p>Note: A comment will not interact with code. It can only be placed in a separate line.</p>
+</blockquote><h3 id="comment">Function</h3>
+<p>To create a set of code that can be run repeatedly, use the function command.<br>
+<strong>Syntax</strong> - function <em>function-name</em><br><em>command</em><br>end f<br>
+<strong>Syntax(To call a function)</strong> - func <em>function-name times</em></p>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>command</em></td>
+<td>The command that needs to run</td>
+</tr>
+<tr>
+<td><em>function-name</em></td>
+<td>The name of the function</td>
+</tr>
+<tr>
+<td><em>times</em></td>
+<td>How many times the function should run</td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+
+</html>

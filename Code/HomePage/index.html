@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="script.js"></script>
+  <title>Kivon Code Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="image.png" type="image/x-icon">
+  <script src="nanobar.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background: #a8d9e3;
+    }
+
+    body::-webkit-scrollbar {
+      display: none;
+    }
+
+    .my-class .bar {
+      background: #000000;
+    }
+  </style>
+</head>
+<section>
+  <div class="intro" id="home">
+    <h3>Kivon Code</h3>
+    <h4>Made By Kevin George(kiwuthegamer)</h4>
+    <p>I am 11 years old and I'm going to be the youngest person to create a coding language!!<br>The coding languages I
+      know are HTML5, JavaScript, CSS3, and Python3.</p>
+    <p><button onclick="window.open('https://kivon.kevingeorge.repl.co/Code/Alpha/0.9')">Click Here</button> to Get
+      Started With Kivon!</p>
+    <p>Do you like Kivon? <button onclick="send()">Click here</button> to subscribe to the newsletter!</p>
+    <br><br><iframe src="https://prezi.com/p/ecvlbbv-tgz7/embed/" id="iframe_container" frameborder="0"
+      webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allow="autoplay; fullscreen" height="350"
+      width="50%" hidden></iframe>
+  </div><br><br>
+  <div class="vers" id="vers">
+    <h3>Versions</h3>
+    <p>Here are all the current versions of <span ondblclick="adm()">Kivon</span>. Also check out the <a
+        href="/Code/VersionHistory">Version History</a> for features of each version!</p>
+    <section>
+      <h4>Pre-Alpha</h4>
+      <p>WARNING: Pre-Alpha versions may not load or function as intended.</p>
+      <input type="button" onclick="window.open('https://replit.com/@KevinGeorge/Kivon-TEST1')" value="TEST 1">
+      <input type="button" onclick="window.open('https://replit.com/@KevinGeorge/Kivon-TEST2')" value="TEST 2">
+      <input type="button" onclick="window.open('https://replit.com/@KevinGeorge/Kivon-TEST3')" value="TEST 3">
+      <input type="button" onclick="window.open('https://replit.com/@KevinGeorge/Kivon-TEST4')" value="TEST 4">
+    </section>
+    <section>
+      <h4>Alpha</h4>
+      <input type="button" onclick="window.open('/Code/Alpha/0.1')" value="Alpha 0.1">
+      <input type="button" onclick="window.open('/Code/Alpha/0.2')" value="Alpha 0.2">
+      <input type="button" onclick="window.open('/Code/Alpha/0.3')" value="Alpha 0.3">
+      <input type="button" onclick="window.open('/Code/Alpha/0.4')" value="Alpha 0.4">
+      <input type="button" onclick="window.open('/Code/Alpha/0.5')" value="Alpha 0.5">
+      <input type="button" onclick="window.open('/Code/Alpha/0.6')" value="Alpha 0.6">
+      <input type="button" onclick="window.open('/Code/Alpha/0.7')" value="Alpha 0.7">
+      <input type="button" onclick="window.open('/Code/Alpha/0.8')" value="Alpha 0.8">
+      <input type="button" onclick="window.open('/Code/Alpha/0.9')" value="Alpha 0.9">
+      <input type="button" onclick="window.open('/Code/Alpha/1.0')" value="Alpha 1.0" name="dev" hidden>
+      <br><br>
+    </section>
+    <section>
+      <h4>JS Plugins</h4>
+      <input type="button" id="b1" onclick="window.open('https://kivon.kevingeorge.repl.co/Code/HomePage')"
+        value="The Kivon Tag">
+      <div class="display" id="d1">An easy way to integrate Kivon code into your HTML website</div><br>
+      <input type="button" id="b2" onclick="window.open('https://kivon.kevingeorge.repl.co/Code/HomePage')"
+        value="LoTeC">
+      <div class="display" id="d2">Short for Lossless Text Compression. Allows you to easily compress text into an
+        unreadable state (To a certain extent)</div><br>
+      <br><br>
+    </section>
+  </div>
+  <br><br><br><br>
+  <div class="guide" id="guide" w3-include-html="guide.html">
+  </div>
+</section>
+<script>
+  alert("This Project is Discontinued. You may find bugs or issues.")
+  function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /* Loop through a collection of all HTML elements: */
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+      elmnt = z[i];
+      /*search for elements with a certain atrribute:*/
+      file = elmnt.getAttribute("w3-include-html");
+      if (file) {
+        /* Make an HTTP request using the attribute value as the file name: */
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /* Remove the attribute, and call this function once more: */
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+          }
+        }
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /* Exit the function: */
+        return;
+      }
+    }
+  }
+  var options = {
+    classname: 'my-class',
+    id: 'my-id',
+  };
+
+  var nanobar = new Nanobar(options);
+
+  var element = document.documentElement,
+    body = document.body,
+    scrollTop = 'scrollTop',
+    scrollHeight = 'scrollHeight',
+    progress = document.querySelector('.progress-bar'),
+    scroll;
+
+  document.addEventListener('scroll', function () {
+    scroll = (element[scrollTop] || body[scrollTop]) / ((element[scrollHeight] || body[scrollHeight]) - element.clientHeight) * 100;
+    nanobar.go(scroll);
+  });
+  includeHTML();
+</script>
+<!--end CssMenu-->
+
+</body>
+
+</html>

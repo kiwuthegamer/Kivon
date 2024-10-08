@@ -1,0 +1,51 @@
+<!-- Stylesheets/Scripts -->
+
+<head>
+	<link rel="shortcut icon" href="image.png" type="image/x-icon">
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<link rel="stylesheet" href="mobile.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<title>Kivon Code Alpha 0.9</title>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <meta name="viewport" content= "width=device-width, user-scalable=no">
+  <meta name="robots" content="noindex" />
+</head>
+
+<body>
+
+  <div class="menu">
+    <button id="m-button" class="m-button" onclick="menut()">Menu</button>
+    <div class="menu-content" id="menu-content" hidden>
+      <a onclick="run()">Run</a>
+      <a onclick="reset()">Reset</a>
+      <a onclick="guide()">Guide</a>
+      <a onclick="window.location.href='https://kivon.kevingeorge.repl.co/VersionHistory'">Version History</a>
+      <a onclick="report()">Report A Bug</a>
+      <a onclick="suggest()">Suggest A Feature</a>
+      <a onclick="example()">Examples</a>
+      <a onclick="swal('','Made by Kevin George (kiwuthegamer)', 'info')">Made By</a>
+      <a onclick="">Share</a>
+      <a onclick="swtch()">Switch Modes</a>
+      <a onclick="msg()">Messages</a>
+      <a onclick="signin()" id="si">Sign In</a>
+      <a onclick="logout()" id="lo">Log Out</a>
+      <div id="name"></div>
+    </div>
+  </div>
+
+  <button class="r-button" onclick="run()">></button>
+  <button class="re-button" onclick="reset()"><</button>
+
+  <br>
+  
+  <div class="in">
+    <textarea rows=10 placeholder="Code Goes Here" class="text" id="input" spellcheck="false"></textarea>
+  </div>
+  <br>
+  <textarea rows=10 readonly id="output" class="out"></textarea>
+
+  <script src="mobile.js"></script>
+  <script src="compiler.js"></script>
+
+</body>

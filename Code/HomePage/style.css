@@ -1,0 +1,181 @@
+.vers section div.display{
+  font-family:"Pathway Gothic One", Helvetica, Arial, sans-serif;
+  color: rgb(78, 139, 243);
+  transition: 0.2s;
+  background-color: rgb(137, 237, 255);
+  border: 10px rgb(137, 237, 255);
+  width: 20%;
+  position: relative;
+  left: 40%;
+  font-size: 0px;
+}
+
+#b1:hover + #d1 {
+  font-size: 26px;
+}
+
+#b2:hover + #d2 {
+  font-size: 26px;
+}
+
+#d1:hover {
+  font-size: 26px;
+}
+
+#d2:hover {
+  font-size: 26px;
+}
+
+.section{text-align:center;}
+
+.intro{text-align:center;}
+
+.intro p a{
+  font-family:"Pathway Gothic One", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  color: rgb(78, 139, 243);
+  transition: 0.2s;
+}
+
+.intro p a:hover{
+  color: #0061bd;
+}
+
+.vers p{
+  font-family:"Pathway Gothic One", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  transition: 0.2s;
+}
+
+.vers p:hover{
+  font-size: 27px;
+}
+
+.intro h3{
+  font-family:"Pathway Gothic One", Helvetica, Arial, sans-serif;
+  font-size: 54px;
+  padding-bottom: 0px;
+  color: rgb(59, 127, 245);
+  transition: 0.2s;
+}
+
+.intro h3:hover {
+  font-size: 60px;
+}
+
+.intro h4{
+  font-family:"Pathway Gothic One", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  padding-top: 0px;
+  color: rgb(59, 127, 245);
+  transition: 0.2s;
+}
+
+.intro h4:hover {
+  font-size: 32px;
+}
+
+.intro p{
+  font-family:"Pathway Gothic One", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  transition: 0.2s;
+}
+
+.intro p:hover{
+  font-size: 27px;
+}
+
+.intro p button{
+  font-family:"Pathway Gothic One", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  color: rgb(96, 152, 248);
+  transition: 0.2s;
+  background-color: #a8d9e3;
+  border-color: #a8d9e3;
+  border-width: 1px;
+}
+
+.intro p button:hover{
+  font-size: 30px;
+  color: #004f99;
+}
+
+.vers h3{
+  font-family:"Pathway Gothic One", Helvetica, Arial, sans-serif;
+  font-size: 45px;
+  padding-bottom: 0px;
+  color: rgb(59, 127, 245);
+  text-align:center;
+  transition: 0.2s;
+}
+
+.vers h3:hover{
+  font-size: 50px;
+}
+
+.vers h4{
+  font-family:"Pathway Gothic One", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  padding-top: 0px;
+  color: rgb(59, 127, 245);
+  text-align:center;
+  transition: 0.2s;
+}
+
+.vers h4:hover{
+  font-size: 30px;
+}
+
+.vers p{
+  font-family:"Pathway Gothic One", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  text-align:center;
+}
+
+.vers a{
+  font-family:"Pathway Gothic One", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  color: rgb(78, 139, 243);
+  transition: 0.2s;
+}
+
+.vers a:hover{
+  color: #0061bd;
+  font-size: 27px;
+}
+
+.vers section{
+  text-align: center;
+}
+
+.vers section input{
+  font-family:"Pathway Gothic One", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  color: rgb(78, 139, 243);
+  transition: 0.2s;
+  background-color: rgb(137, 237, 255);
+  border: 10px rgb(137, 237, 255);
+}
+
+.vers section input:hover{
+  color: #66b5ff;
+  font-size: 32px;
+  background-color: rgb(43, 121, 255);
+}
+
+.vers a:hover{
+  color: #0061bd;
+}
+
+.guide p{
+  font-size: 18px;
+}
+
+.guide a:hover{
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+.guide a:hover{
+  font-size: 20px;
+}

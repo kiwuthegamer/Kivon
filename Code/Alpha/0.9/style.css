@@ -1,0 +1,671 @@
+:root{
+  --main-bg-color: #141518;
+  --main-button-color: #1e282c;
+  --main-dark-button-color: #181e21;
+  --main-text-color: #FFFFFF;
+  --main-text-color2: rgb(0, 0, 0);
+  --main-border-color: #FFFFFF;
+  --main-border-size: 1px;
+}
+
+.banner {
+  height: 2000px;
+  width: 2000px;
+  background-color: white;
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+.swal-text{
+  font-family: Montserrat;
+}
+
+.swal-title{
+  font-family: Montserrat;
+}
+
+.txtarea{
+  width:100%;
+}
+
+.dropdwn {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdwn-content {
+  display: none;
+  position: absolute;
+  background-color: var(--main-dark-button-color);
+  border-radius: 5px;
+}
+
+.dropdwn-content a {
+  font-family: Montserrat;
+  color: rgb(125, 63, 207);
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  display: block;
+  transition: 0.2s
+}
+
+.dropdwn-content a:hover {background-color: rgb(125, 63, 207); color: var(--main-text-color)}
+.dropdwn:hover .dropdwn-content {display: block;}
+
+.txtarea div{
+  float:left;
+  box-sizing: border-box;
+}
+
+.txtarea div span{
+  display:block;
+}
+
+.txtarea div textarea{
+  box-sizing: border-box;
+}
+  
+.reset {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(221, 40, 65);
+  font-size: 20px;
+  background: var(--main-button-color);
+  padding: 10px 20px 10px 20px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+}
+  
+.reset:hover {
+  background: rgb(221, 40, 65);
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.examples {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(125, 63, 207);
+  font-size: 20px;
+  background: var(--main-button-color);
+  padding: 10px 20px 10px 20px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+}
+  
+.examples:hover {
+  background: rgb(125, 63, 207);
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.run {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(38, 206, 108);
+  font-size: 20px;
+  background: var(--main-button-color);
+  padding: 10px 20px 10px 20px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+}
+
+.run:hover {
+  background: rgb(38, 206, 108);
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.vh {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(182, 46, 175);
+  font-size: 20px;
+  background: var(--main-button-color);
+  padding: 10px 20px 10px 20px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+}
+
+.vh:hover {
+  background: rgb(201, 95, 195);
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.guide {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(248, 187, 45);
+  font-size: 20px;
+  background: var(--main-button-color);
+  padding: 10px 20px 10px 20px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+}
+
+.guide:hover {
+  background: rgb(248, 187, 45);
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+  
+.credit {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(50, 150, 184);
+  font-size: 20px;
+  background: var(--main-button-color);
+  padding: 10px 20px 10px 20px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+}
+
+.credit:hover {
+  background: rgb(50, 150, 184);
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.tutor {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(93, 130, 230);
+  font-size: 20px;
+  background: var(--main-button-color);
+  padding: 10px 20px 10px 20px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+  display: inline-block;
+}
+
+.tutor:hover {
+  background: rgb(93, 130, 230);
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.message {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(231, 220, 57);
+  font-size: 18px;
+  background: var(--main-button-color);
+  padding: 10px 20px 10px 20px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+}
+
+.message:hover {
+  background: rgb(231, 220, 57);
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.text {
+  padding: 6px;
+  font-size: 16px;
+  font-family: 'Consolas';
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  background-color: var(--main-button-color);
+  color: var(--main-text-color);
+  border-style: solid;
+  border-radius: 2px;
+  width: 1000px;
+  display: inline-block;
+  word-break: break-word;
+  resize: none;
+  outline: none;
+}
+
+.out {
+  padding: 6px;
+  font-size: 16px;
+  font-family: Montserrat;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  background-color: var(--main-button-color);
+  color: var(--main-text-color);
+  border-style: solid;
+  border-radius: 2px;
+  width: 320px;
+  display: inline-block;
+  word-break: break-word;
+  resize: none;
+  outline: none;
+}
+
+input[type=file]::file-selector-button {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(3, 174, 180);
+  font-size: 20px;
+  background: var(--main-button-color);
+  padding: 10px 20px 10px 20px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+  margin-top: 12px;
+  display: inline-block;
+}
+
+.export {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(3, 174, 180);
+  font-size: 20px;
+  background: var(--main-button-color);
+  padding: 10px 20px 10px 20px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+  margin-left: -96px;
+  display: inline-block;
+}
+
+.swtch-mode {
+  width: 177px;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(3, 174, 180);
+  font-size: 20px;
+  background: var(--main-button-color);
+  padding: 10px 20px 10px 20px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+  margin-left: 829px;
+  display: inline-block;
+}
+
+.load {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(3, 174, 180);
+  font-size: 20px;
+  background: var(--main-button-color);
+  padding: 10px 20px 10px 20px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+  margin-left: 829px;
+  margin-top: 6px;
+  display: inline-block;
+  position: relative;
+}
+
+.in{
+  margin-right: 10px;
+}
+
+.tutorial{
+  position: absolute;
+  z-index:1;
+  left: 8;
+  top: 516;
+  width: 820;
+  height: 100;
+  background-color: var(--main-button-color);
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.tu-close{
+  left:785;
+  background-color: var(--main-button-color);
+  border-color: var(--main-button-color);
+  position: absolute;
+  z-index:1;
+}
+
+.tu-arr-r{
+  left:785;
+  top:40;
+  background-color: var(--main-button-color);
+  border-color: var(--main-button-color);
+  position: absolute;
+  z-index:1;
+}
+
+.tu-arr-l{
+  left:10;
+  top:40;
+  background-color: var(--main-button-color);
+  border-color: var(--main-button-color);
+  position: absolute;
+  z-index:1;
+}
+
+.tu-slides{
+  top:5;
+  left:50;
+  background-color: var(--main-button-color);
+  border-color: var(--main-button-color);
+  position: absolute;
+  z-index:1;
+  font-family: Montserrat;
+  color: var(--main-text-color);
+  max-width: 730;
+}
+
+.tutorial::-webkit-scrollbar{
+  width: 5px;
+}
+
+.tutorial::-webkit-scrollbar-thumb{
+  background-color: #000000;
+}
+
+.tu-slides input.blue{
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(66, 110, 231);
+  font-size: 15px;
+  background: var(--main-button-color);
+  padding: 5px 10px 5px 10px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+  display: inline-block;
+}
+
+.tu-slides input.blue:hover {
+  background: rgb(66, 110, 231);
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.tu-slides input.green{
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(94, 231, 66);
+  font-size: 15px;
+  background: var(--main-button-color);
+  padding: 5px 10px 5px 10px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+  display: inline-block;
+}
+
+.tu-slides input.green:hover {
+  background: rgb(94, 231, 66);
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.tu-slides input.red{
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(235, 66, 66);
+  font-size: 15px;
+  background: var(--main-button-color);
+  padding: 5px 10px 5px 10px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+  display: inline-block;
+}
+
+.tu-slides input.red:hover {
+  background: rgb(235, 66, 66);
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.tu-slides input.yellow{
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(224, 235, 66);
+  font-size: 15px;
+  background: var(--main-button-color);
+  padding: 5px 10px 5px 10px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+  display: inline-block;
+}
+
+.tu-slides input.yellow:hover {
+  background: rgb(224, 235, 66);
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.tu-slides code{
+  background-color: var(--main-dark-button-color);
+  font-size: 15;
+  padding: 2px 2px 2px 2px
+}
+
+.r-dropdwn {
+  position: relative;
+  display: inline-block;
+}
+
+.r-dropdwn-content {
+  display: none;
+  position: absolute;
+  background-color: var(--main-dark-button-color);
+  border-radius: 5px;
+  width: 190px;
+}
+
+.r-dropdwn-content a {
+  font-family: Montserrat;
+  color: rgb(252, 81, 81);
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  display: block;
+  transition: 0.2s
+}
+
+.r-dropdwn-content a:hover {background-color: rgb(252, 81, 81); color: var(--main-text-color)}
+.r-dropdwn:hover .r-dropdwn-content {display: block;}
+
+.report {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(252, 81, 81);
+  font-size: 20px;
+  background: var(--main-button-color);
+  padding: 10px 20px 10px 20px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+}
+  
+.report:hover {
+  background: rgb(252, 81, 81);
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+
+.dropdwns {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdwns-content {
+  display: none;
+  position: absolute;
+  background-color: var(--main-dark-button-color);
+  border-radius: 5px;
+  width: 190px;
+}
+
+.dropdwns-content a {
+  font-family: Montserrat;
+  color: rgb(96, 214, 60);
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  display: block;
+  transition: 0.2s
+}
+
+.dropdwns-content a:hover {background-color: rgb(96, 214, 60); color: var(--main-text-color)}
+.dropdwns:hover .dropdwns-content {display: block;}
+
+.share {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(96, 214, 60);
+  font-size: 20px;
+  background: var(--main-button-color);
+  padding: 10px 20px 10px 20px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+}
+  
+.share:hover {
+  background: rgb(96, 214, 60);
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.mobile_banner {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  border-color: var(--main-border-color);
+  border-width: var(--main-border-size);
+  z-index: 99;
+  align-self: center;
+  position: absolute;
+  width: 900px;
+	height: 1400px;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+  font-size: 100px;
+  text-align: center;
+  font-family: Montserrat;
+}
+
+.signin {
+  width: 110px;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(3, 174, 180);
+  font-size: 20px;
+  background: var(--main-button-color);
+  padding: 10px 20px 10px 20px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+  position: relative;
+  text-align: center;
+}
+.logout {
+  width: 123px;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(3, 174, 180);
+  font-size: 20px;
+  background: var(--main-button-color);
+  padding: 10px 20px 10px 20px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+  position: relative;
+  text-align: center;
+}

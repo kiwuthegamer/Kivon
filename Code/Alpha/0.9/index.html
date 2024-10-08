@@ -1,0 +1,101 @@
+<!-- Stylesheets/Scripts -->
+
+<head>
+	<link rel="shortcut icon" href="image.png" type="image/x-icon">
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<title>Kivon Code Alpha 0.9</title>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <meta name="description" content="Kivon, Made For Beginners Who Want To Learn Coding!">
+  <meta name="keywords" content="Kivon, Code, Coding, Programming, Beginners, Simple, Easy, Learn, Coding Language, Programming   Language">
+</head>
+
+<!-- Body -->
+
+<body>
+
+<!-- Mobile Banner -->
+
+<div class="banner" id="banner"></div>
+
+<!-- Buttons -->
+
+<input id="run" class="run" type="button" onclick="run()" value="Run >">
+<input id="reset" class="reset" type="button" onclick="reset()" value="Reset <">
+<input id="guide" class="guide" type="button" onclick="guide()" value="Guide ?">
+<input id="vh" class="vh" type="button" value="Version History ..." onclick="window.location.href='https://kivon.kevingeorge.repl.co/VersionHistory'">
+
+<div class="r-dropdwn">
+  <button id="report" class="report">Report !</button>
+  <div class="r-dropdwn-content">
+    <a onclick="report()">Report A Bug</a>
+    <a onclick="suggest()">Suggest A Feature</a>
+  </div>
+</div>
+
+<input id="tutorial" class="tutor" type="button" onclick="tutor()" value="Tutorial ?">
+<div class="dropdwn">
+  <button id="examples" class="examples">Examples &</button>
+  <div class="dropdwn-content">
+    <a onclick="document.getElementById('input').value='print Hello World!'">Hello World</a>
+    <a onclick="qq()">Quick Quiz</a>
+    <a onclick="rq()">Random Quiz</a>
+  </div>
+</div>
+<input id="credit" class="credit" type="button" onclick="swal('','Made by Kevin George (kiwuthegamer)', 'info')" value="Made By @">
+
+<div class="dropdwns">
+  <button id="share" class="share">Share +</button>
+  <div class="dropdwns-content">
+    <a onclick="scl()">Share Code using Link</a>
+  </div>
+</div>
+
+<input id="message" class="message" type="button" onclick="msg()" value="✉">
+
+<br><br>
+<!-- Input + Output -->
+
+<div class="txtarea">
+  <div class="in">
+    <textarea rows=22 placeholder="Code Goes Here" class="text" id="input" spellcheck="false"></textarea>
+  </div>
+  <div>
+    <textarea rows=22 readonly id="output" class="out"></textarea>
+  </div>
+</div>
+
+<section id="tutor" class="tutorial" hidden>
+  
+  <div class="tu-slides" id="slide1">Jump to:<br><br><input type="button" onclick="setsld(2)" value="Start" class="green"><input type="button" onclick="setsld(3)" value="Functions" class="yellow"></div>
+  <div class="tu-slides" id="slide2" hidden><b>Start</b><br>This is the introduction section! Press the buttons on the right and left to move between pages. Click the cross icon to close the tutorial. Each line can have 1 function. There are 3 super simple functions. Let's see the first one.</div>
+  <div class="tu-slides" id="slide3" hidden>The print function can be run by typing print as the first word. After typing print, anything you type after it is going to print in the output box.<br>Example: <code>print Hi</code><br>You can even type <input type="button" onclick="setsld(5)" value="Variable" class="red"> names starting with $ to print a variable</div>
+  <div class="tu-slides" id="slide4" hidden>The other 2 simple functions are alert and prompt. Both of them work the same as the print function, except the first word would be alert or prompt.<br>The prompt function will not store the reply unless you use a <input type="button" onclick="setsld(5)" value="Prompt Saved In Variable" class="blue"></div>
+  <div class="tu-slides" id="slide5" hidden>The variable function is very useful. The variable function will store a value in a variable. You can create and edit a variable with the same command: <code>var <em>varname value</em></code><br>To save the result of a prompt in a variable, using the following command:<br><code>var <em>varname</em> $prompt <em>prompt text</em></div>
+  <div class="tu-slides" id="slide6" hidden>To set a variable to a random number use $rand. Example: <code>var <em>varname</em> $rand <em> num1 num2</em></code><br><br>You can even set a variable to the solution to a math problem. Use $calc: <code>var <em>varname</em> $calc <em>operator num1 num2</em></code><br>The operators for this are "add", "sub", "mul", and "div".</div>
+  <div class="tu-slides" id="slide7" hidden>The if statement will allow you to compare 2 values using a condition. If the condition is true then it will run a set of commands. Example: <br><code>if <em>varname/value operator varname/value</em> then<br><em>commands</em><br>end</code></div>
+  <div class="tu-slides" id="slide8" hidden>You can also add an else to the end of an if statement.<br><code>if <em>varname/value operator varname/value</em> then<br><em>commands</em><br>else<br><em>commands</em><br>end</code></div>
+  <div class="tu-slides" id="slide9" hidden></div>
+  <div class="tu-slides" id="slide10" hidden></div>
+  <div class="tu-slides" id="slide11" hidden></div>
+  
+  <input value="<--" class="tu-arr-l" type="button" onclick="prvsld()">
+  <input value="-->" class="tu-arr-r" type="button" onclick="nxtsld()">
+  <input value="❌" class="tu-close" type="button" onclick="tutorc()">
+</section>
+
+<input id="swtch-mode" class="swtch-mode" value="Switch Mode" type="button" onclick="swtch()">
+<input id="import" class="import" type="file" accept=".kivon" onclick="impor()" value="Import">
+<input id="export" class="export" type="button" onclick="expor()" value="Export File">
+<br>
+<input id="load" class="load" type="button" onclick="impor()" value="Load File">
+
+<input id="signin" class="signin" type="button" onclick="signin()" value="Sign In">
+<input id="logout" class="logout" type="button" onclick="logout()" value="Log Out" hidden>
+
+<script src="compiler.js"></script>
+<script src="script.js"></script>
+
+</body>

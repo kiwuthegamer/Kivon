@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="script.js"></script>
+  <title>Kivon Utili-Tech Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="image.png" type="image/x-icon">
+  <style>
+    body {
+      margin:0;
+      background:#a8d9e3;
+    }
+    
+    body::-webkit-scrollbar {
+      display: none;
+    }
+
+    .my-class .bar {
+      background: #000000;
+    }
+  </style>
+</head>
+<body>
+<section>
+  <div class="intro" id="home">
+    <h3>Kivon Utili-Tech</h3>
+    <h4>Made By Kevin George(kiwuthegamer)</h4>
+    <p>Do you like Kivon? <button onclick="send()">Click here</button> to subscribe to the newsletter!</p>
+  </div><br><br>
+  <div class="vers" id="vers" hidden>
+    <h3>For Coders</h3>
+    <section>
+      <input type="button" id="b1" onclick="window.open('https://kivon.kevingeorge.repl.co/Code/HomePage')" value="Kivon Code"><br><br>
+      <input type="button" id="b2" onclick="window.open('https://kivon.kevingeorge.repl.co/UtiliTech/HomePage')" value="Utili-Tech"><br><br>
+      <br><br>
+    </section>
+    <h3>For Cubers</h3>
+    <section>
+      <input type="button" id="b1" onclick="window.open('https://kivon.kevingeorge.repl.co/Code/HomePage')" value="Kivon Code"><br><br>
+      <input type="button" id="b2" onclick="window.open('https://kivon.kevingeorge.repl.co/UtiliTech/HomePage')" value="Utili-Tech"><br><br>
+      <br><br>
+    </section>
+  </div>
+</section>
+<script>
+alert("This Project is Discontinued. You may find bugs or issues.")
+  var options = {
+    classname: 'my-class',
+    id: 'my-id',
+  };
+
+  var nanobar = new Nanobar( options );
+
+  var element = document.documentElement,
+  body = document.body,
+  scrollTop = 'scrollTop',
+  scrollHeight = 'scrollHeight',
+  progress = document.querySelector('.progress-bar'),
+  scroll;
+
+  document.addEventListener('scroll', function() {
+    scroll = (element[scrollTop]||body[scrollTop]) / ((element[scrollHeight]||body[scrollHeight]) - element.clientHeight) * 100;
+    nanobar.go(scroll);
+  });
+</script>
+
+</body>
+</html>

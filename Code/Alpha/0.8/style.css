@@ -1,0 +1,298 @@
+:root{
+  --main-bg-color: #141518;
+  --main-button-color: #1e282c;
+  --main-dark-button-color: #181e21;
+  --main-text-color: #FFFFFF;
+  --main-border-color: #FFFFFF;
+  --main-border-size: 1px;
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+.swal-text{
+  font-family: Montserrat;
+}
+
+.txtarea{
+  width:100%;
+}
+
+.dropdwn {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdwn-content {
+  display: none;
+  position: absolute;
+  background-color: var(--main-dark-button-color);
+  border-radius: 5px;
+}
+
+.dropdwn-content a {
+  font-family: Montserrat;
+  color: rgb(125, 63, 207);
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  display: block;
+  transition: 0.2s
+}
+
+.dropdwn-content a:hover {background-color: rgb(125, 63, 207); color: var(--main-text-color)}
+.dropdwn:hover .dropdwn-content {display: block;}
+
+.txtarea div{
+  float:left;
+  box-sizing: border-box;
+}
+
+.txtarea div span{
+  display:block;
+}
+
+.txtarea div textarea{
+  box-sizing: border-box;
+}
+  
+.reset {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(207, 63, 97);
+  font-size: 20px;
+  background: var(--main-button-color);
+  padding: 10px 20px 10px 20px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+}
+  
+.reset:hover {
+  background: rgb(207, 63, 97);
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.examples {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(125, 63, 207);
+  font-size: 20px;
+  background: var(--main-button-color);
+  padding: 10px 20px 10px 20px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+}
+  
+.examples:hover {
+  background: rgb(125, 63, 207);
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.run {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(7, 146, 109);
+  font-size: 20px;
+  background: var(--main-button-color);
+  padding: 10px 20px 10px 20px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+}
+
+.run:hover {
+  background: rgb(8, 156, 117);
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.vh {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(182, 46, 175);
+  font-size: 20px;
+  background: var(--main-button-color);
+  padding: 10px 20px 10px 20px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+}
+
+.vh:hover {
+  background: rgb(201, 95, 195);
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.guide {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(194, 152, 54);
+  font-size: 20px;
+  background: var(--main-button-color);
+  padding: 10px 20px 10px 20px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+}
+
+.guide:hover {
+  background: rgb(201, 165, 80);
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+  
+.credit {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(50, 150, 184);
+  font-size: 20px;
+  background: var(--main-button-color);
+  padding: 10px 20px 10px 20px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+}
+
+.credit:hover {
+  background: rgb(50, 150, 184);
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.text {
+  padding: 6px;
+  font-size: 16px;
+  font-family: 'Consolas';
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  background-color: var(--main-button-color);
+  color: var(--main-text-color);
+  border-style: solid;
+  border-radius: 2px;
+  width: 1000px;
+  display: inline-block;
+  word-break: break-word;
+  resize: none;
+  outline: none;
+}
+
+.out {
+  padding: 5px;
+  font-size: 16px;
+  font-family: Montserrat;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  background-color: var(--main-button-color);
+  color: var(--main-text-color);
+  border-style: solid;
+  border-radius: 2px;
+  width: 320px;
+  display: inline-block;
+  word-break: break-word;
+  resize: none;
+  outline: none;
+}
+
+input[type=file]::file-selector-button {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(3, 174, 180);
+  font-size: 20px;
+  background: var(--main-button-color);
+  padding: 10px 20px 10px 20px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+  margin-top: 12px;
+}
+
+.export {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(3, 174, 180);
+  font-size: 20px;
+  background: var(--main-button-color);
+  padding: 10px 20px 10px 20px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+  margin-left: -96px;
+}
+
+.swtch-mode {
+  width: 177px;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(3, 174, 180);
+  font-size: 20px;
+  background: var(--main-button-color);
+  padding: 10px 20px 10px 20px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+  margin-left: 829px;
+}
+
+.load {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  color: rgb(3, 174, 180);
+  font-size: 20px;
+  background: var(--main-button-color);
+  padding: 10px 20px 10px 20px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  text-decoration: none;
+  transition: 0.2s;
+  outline: none;
+  margin-left: 1010px;
+  margin-top: 6px;
+}
+
+.in{
+  margin-right: 10px;
+}

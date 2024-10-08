@@ -1,0 +1,152 @@
+:root {
+  --main-dark-button-color: #181e21;
+  --main-button-color: #1e282c;
+  --main-bg-color: #141518;
+  --main-text-color: #FFFFFF;
+  --main-text-color2: rgb(0, 0, 0);
+  --main-border-color: #FFFFFF;
+  --main-border-size: 1px;
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+.swal-text{
+  font-family: Montserrat;
+}
+
+.swal-title{
+  font-family: Montserrat;
+}
+
+.txtarea div{
+  float:left;
+  box-sizing: border-box;
+}
+
+.txtarea div span{
+  display:block;
+}
+
+.txtarea div textarea{
+  box-sizing: border-box;
+}
+
+.text {
+  padding: 6px;
+  font-size: 16px;
+  font-family: Montserrat;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  background-color: var(--main-button-color);
+  color: var(--main-text-color);
+  border-style: solid;
+  border-radius: 2px;
+  width: 350px;
+  display: inline-block;
+  word-break: break-word;
+  resize: none;
+  outline: none;
+}
+
+.out {
+  padding: 6px;
+  font-size: 16px;
+  font-family: Montserrat;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  background-color: var(--main-button-color);
+  color: var(--main-text-color);
+  border-style: solid;
+  border-radius: 2px;
+  width: 350px;
+  display: inline-block;
+  word-break: break-word;
+  resize: none;
+  outline: none;
+}
+
+.m-button {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Montserrat;
+  font-size: 25px;
+  background: var(--main-button-color);
+  padding: 10px 20px 10px 20px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  transition: 0.2s;
+  outline: none;
+  background: rgb(66, 203, 248);
+  text-decoration: none;
+  color: var(--main-text-color2);
+}
+
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-content {
+  position: absolute;
+  background-color: var(--main-dark-button-color);
+  border-radius: 5px;
+}
+
+.menu-content a {
+  font-family: Montserrat;
+  color: rgb(66, 203, 248);
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  display: block;
+  transition: 0.2s;
+}
+
+.menu-content a:click {
+  background-color: rgb(66, 203, 248);
+  color: var(--main-text-color)
+}
+
+.menu-content div {
+  font-family: Montserrat;
+  color: rgb(66, 203, 248);
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.r-button {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 50px;
+  font-family: Montserrat;
+  font-size: 35px;
+  background: var(--main-button-color);
+  padding: 0px 10px 0px 10px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  outline: none;
+  background: rgb(85, 241, 85);
+  text-decoration: none;
+  color: var(--main-text-color2);
+}
+
+.re-button {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 50px;
+  font-family: Montserrat;
+  font-size: 35px;
+  background: var(--main-button-color);
+  padding: 0px 10px 0px 10px;
+  border-width: var(--main-border-size);
+  border-color: var(--main-border-color);
+  outline: none;
+  background: rgb(241, 85, 85);
+  text-decoration: none;
+  color: var(--main-text-color2);
+}
