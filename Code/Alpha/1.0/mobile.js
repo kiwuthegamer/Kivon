@@ -16,7 +16,7 @@ function share(){
 }
 
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){} else {
-  window.open('https://kivon.kevingeorge.repl.co/Code/Alpha/1.0', '_self')
+  window.open('https://kiwuthegamer.github.io/Kivon/Code/Alpha/1.0', '_self')
 }
 
 function swtch(){
@@ -123,9 +123,9 @@ function scl(){
 function scl2(){
   var txt = document.getElementById('input').value;
   if(document.location.href.includes('?code=')){
-    var out = document.location.href.substr(0, 44)+"?code="+txt.replace(/\n/g,'\\n').replace(/ /,'%20')
+    var out = "https://kiwuthegamer.github.io/Kivon/Code/Alpha/1.0?code="+txt.replace(/\n/g,'\\n').replace(/ /,'%20')
   } else {
-    var out = document.location.href+"?code="+txt.replace(/\n/g,'\\n').replace(/ /,'%20')
+    var out = "https://kiwuthegamer.github.io/Kivon/Code/Alpha/1.0?code="+txt.replace(/\n/g,'\\n').replace(/ /,'%20')
   }
   return(out);
 }
@@ -133,9 +133,9 @@ function scl2(){
 //Email Function
 function sendEmail(subject, body) {
   Email.send({
-    SecureToken: "7c36e765-25d3-4370-abac-5054f2a63d65",
-    To: 'kevin@trins.org',
-    From: "kevin@trins.org",
+    SecureToken: "",
+    To: '',
+    From: "",
     Subject: subject,
     Body: body,
   })
@@ -194,7 +194,7 @@ function rq(){
 
 //Guide Alerts
 function guide(){
-  window.open('https://kivon.kevingeorge.repl.co/Code/HomePage', "_self")
+  window.open('https://kiwuthegamer.github.io/Kivon/Code/HomePage', "_self")
 }
 
 //Reset Function

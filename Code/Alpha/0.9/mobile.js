@@ -145,9 +145,9 @@ function msg(){
 function scl(){
   var txt = document.getElementById('input').value;
   if(document.location.href.includes('?code=')){
-    var out = document.location.href.substr(0, 44)+"?code="+txt.replace(/\n/g,'\\n').replace(/ /,'%20')
+    var out = "https://kiwuthegamer.github.io/Kivon/Code/Alpha/0.9?code="+txt.replace(/\n/g,'\\n').replace(/ /,'%20')
   } else {
-    var out = document.location.href+"?code="+txt.replace(/\n/g,'\\n').replace(/ /,'%20')
+    var out = "https://kiwuthegamer.github.io/Kivon/Code/Alpha/0.9?code="+txt.replace(/\n/g,'\\n').replace(/ /,'%20')
   }
   ta = document.createElement("textarea");
   ta.textContent = out;
@@ -162,9 +162,9 @@ function scl(){
 //Email Function
 function sendEmail(subject, body) {
   Email.send({
-    SecureToken: "7c36e765-25d3-4370-abac-5054f2a63d65",
-    To: 'kevin@trins.org',
-    From: "kevin@trins.org",
+    SecureToken: "",
+    To: '',
+    From: "",
     Subject: subject,
     Body: body,
   })
@@ -228,7 +228,7 @@ function rq(){
 
 //Guide Alerts
 function guide(){
-  window.open('https://kivon.kevingeorge.repl.co/HomePage', "_self")
+  window.open('https://kiwuthegamer.github.io/Kivon/HomePage/', "_self")
 }
 
 //Reset Function

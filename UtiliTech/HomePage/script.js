@@ -34,7 +34,7 @@ function uncon(txt){
 
 function refl(){
   var ref = prompt('Reference Link');
-  alert('https://kivon.kevingeorge.repl.co/HomePage/?ref='+con(ref));
+  alert('https://kiwuthegamer.github.io/Kivon/HomePage/?ref='+con(ref));
 }
 
 function gPBN(name, url = window.location.href) {
@@ -48,13 +48,13 @@ function gPBN(name, url = window.location.href) {
 
 window.onload = (event) => {
   if(gPBN('ref')){
-    emailjs.init("user_q7OdX06vOo84BEUotCJi0");
+    emailjs.init("");
     var templateParams = {
       name: uncon(gPBN('ref')),
     };
-    emailjs.send("service_dgzzazn","template_dtn46fh",templateParams)
+    emailjs.send("","",templateParams)
     .then(() => {
-      window.location.href = "https://kivon.kevingeorge.repl.co/HomePage/"
+      window.location.href = "https://kiwuthegamer.github.io/Kivon/HomePage/"
     }, (err) => {
       console.log(JSON.stringify(err));
     });
@@ -105,11 +105,11 @@ function send(){
   swal("Email: ","Please enter your email", {content:"input",})
   .then((value) => {
     if(validateEmail(`${value}`)==true){
-      emailjs.init("user_q7OdX06vOo84BEUotCJi0");
+      emailjs.init("");
       var templateParams = {
         message: `${value}`,
       };
-      emailjs.send("service_dgzzazn","template_9hsu1te", templateParams)
+      emailjs.send("","", templateParams)
       swal("Congratulations!", "You have successfully subscribed to The Kivon Newsletter",'success');
     } else {
       swal("Error!", "Invalid Email",'error');

@@ -111,7 +111,7 @@ window.onresize = function() {
 
 function nt(){
   var txt = document.getElementById('input').value;
-  var out = 'https://kivon.kevingeorge.repl.co/Code/Alpha/1.0/code.html?code='+converts(txt);
+  var out = 'https://kiwuthegamer.github.io/Kivon/Code/Alpha/1.0/code.html?code='+converts(txt);
   window.open(out);
 }
 
@@ -248,7 +248,7 @@ function start(){
 //Mobile Check
 
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-  window.open('https://kivon.kevingeorge.repl.co/Code/Alpha/1.0/mobile.html', '_self')
+  window.open('https://kiwuthegamer.github.io/Kivon/Code/Alpha/1.0/mobile.html', '_self')
 } else {
   document.getElementById('banner').hidden=true;
 }
@@ -268,7 +268,7 @@ if(window.location.href.includes('?code=')){} else {
 //Share Code with Link
 function scl(){
   var txt = document.getElementById('input').value;
-  var out = 'https://kivon.kevingeorge.repl.co/Code/Alpha/1.0/?code='+converts(txt);
+  var out = 'https://kiwuthegamer.github.io/Kivon/Code/Alpha/1.0/?code='+converts(txt);
   ta = document.createElement("textarea");
   ta.textContent = out;
   document.body.appendChild(ta);
@@ -281,9 +281,9 @@ function scl(){
 //Email Function
 function sendEmail(subject, body) {
   Email.send({
-    SecureToken: "7c36e765-25d3-4370-abac-5054f2a63d65",
-    To: 'kevin@trins.org',
-    From: "kevin@trins.org",
+    SecureToken: "",
+    To: '',
+    From: "",
     Subject: subject,
     Body: body,
   })
@@ -564,7 +564,7 @@ function rq(){
 
 //guide alerts
 function guide(){
-  window.open('https://kivon.kevingeorge.repl.co/Code/HomePage', "_self")
+  window.open('https://kiwuthegamer.github.io/Kivon/Code/HomePage', "_self")
 }
 //reset function
 function reset(){
