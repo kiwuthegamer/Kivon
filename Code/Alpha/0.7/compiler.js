@@ -361,7 +361,7 @@ function qq(){
 
 //guide alerts
 function guide(){
-  window.open('https://kiwuthegamer.github.io/Kivon/HomePage/', "_self")
+  window.open('../../../HomePage/', "_self")
 }
 //reset function
 function reset(){
