@@ -34,7 +34,7 @@ function uncon(txt){
 
 function refl(){
   var ref = prompt('Reference Link');
-  alert('https://kiwuthegamer.github.io/Kivon/HomePage/?ref='+con(ref));
+  alert('https://wldd22.github.io/Kivon/HomePage/?ref='+con(ref));
 }
 
 function gPBN(name, url = window.location.href) {

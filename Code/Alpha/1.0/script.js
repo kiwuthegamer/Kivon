@@ -111,7 +111,7 @@ window.onresize = function() {
 
 function nt(){
   var txt = document.getElementById('input').value;
-  var out = 'https://kiwuthegamer.github.io/Kivon/Code/Alpha/1.0/code.html?code='+converts(txt);
+  var out = './code.html?code='+converts(txt);
   window.open(out);
 }
 
@@ -248,7 +248,7 @@ function start(){
 //Mobile Check
 
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-  window.open('https://kiwuthegamer.github.io/Kivon/Code/Alpha/1.0/mobile.html', '_self')
+  window.open('./mobile.html', '_self')
 } else {
   document.getElementById('banner').hidden=true;
 }
@@ -268,7 +268,7 @@ if(window.location.href.includes('?code=')){} else {
 //Share Code with Link
 function scl(){
   var txt = document.getElementById('input').value;
-  var out = 'https://kiwuthegamer.github.io/Kivon/Code/Alpha/1.0/?code='+converts(txt);
+  var out = window.location.origin + window.location.pathname + '?code='+converts(txt);
   ta = document.createElement("textarea");
   ta.textContent = out;
   document.body.appendChild(ta);
@@ -564,7 +564,7 @@ function rq(){
 
 //guide alerts
 function guide(){
-  window.open('https://kiwuthegamer.github.io/Kivon/Code/HomePage', "_self")
+  window.open('../../HomePage', "_self")
 }
 //reset function
 function reset(){
